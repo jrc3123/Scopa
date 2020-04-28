@@ -16,7 +16,7 @@ io.on('connection', function (socket) {
         io.emit('dealCards');
     });
 
-    socket.on('cardPlayed', function (gameObject, isPlayerA) {
+    socket.on('cardPlayed', function (gameObject, isPlayerA,) {
         io.emit('cardPlayed', gameObject, isPlayerA);
     });
 
